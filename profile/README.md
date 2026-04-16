@@ -1,6 +1,6 @@
 # rENM Framework
 
-Reconstructing and analyzing long-term ecological niche dynamics
+**A Modular Framework for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
 
 ---
 
@@ -11,7 +11,7 @@ https://github.com/rENM-Framework/rENM
 
 ## What is rENM?
 
-The retrospective Ecological Niche Modeling (rENM) framework is an observational system for reconstructing multi-decadal dynamics in climatic suitability and environmental structure.
+The retrospective Ecological Niche Modeling (rENM) framework is an observational system for reconstructing multi-decadal dynamics in climatic suitability and environmental structure. rENMtools is adaptable to many type of organisms; however, it is currently designed to model climate change influences on North American bird species. Its capabilities span the past 45 years and draw on the citizen science observations contained in Cornell Lab's eBird collections and environmental data from NASA's Earth system models.
 
 Rather than treating ecological niche models as static representations, rENM uses time-structured modeling to reveal:
 
