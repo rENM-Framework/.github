@@ -1,29 +1,84 @@
-## rENM Framework
+# rENM Framework
 
-A modular framework for reconstructing and analyzing long-term ecological niche dynamics.
+Reconstructing and analyzing long-term ecological niche dynamics
 
-## Overview
+---
 
-The rENM framework is designed to:
-- Reconstruct climate-driven niche dynamics over multi-decadal time scales
-- Analyze trends in climatic suitability, centroid movement, and environmental structure
-- Support reproducible ecological modeling workflows
+👉 Start here: Full framework, workflow, and reproducible analysis  
+https://github.com/rENM-Framework/rENM
 
-## Packages
+---
 
-- rENM.core – Core data structures and utilities
-- rENM.analysis – Modeling workflows and ensemble methods
-- rENM.reports – Reporting and document generation
-- rENM.ai – AI-assisted analysis pipeline
+## What is rENM?
 
-## Getting Started
+The retrospective Ecological Niche Modeling (rENM) framework is an observational system for reconstructing multi-decadal dynamics in climatic suitability and environmental structure.
 
-See individual repositories for installation and usage instructions.
+Rather than treating ecological niche models as static representations, rENM uses time-structured modeling to reveal:
 
-## Publications
+- Long-term trends in climatic suitability  
+- Shifts in niche centroids and geographic expression  
+- Changes in environmental structure across decades  
+- Bioclimatic velocity and directional movement in climate space  
 
-(coming soon)
+This approach enables the detection of ecological responses to climate change over 40+ year time horizons.
+
+---
+
+## Why it matters
+
+- Moves ENM from static prediction → dynamic observation
+- Enables trend detection across historical climate regimes
+- Bridges climate space reconstruction and geographic projection
+- Supports reproducible, data-driven ecological inference
+
+---
+
+## Framework Components
+
+| Component | Role |
+|----------|------|
+| rENM.core | Data structures and project infrastructure |
+| rENM.analysis | Modeling workflows and ensemble ENMs |
+| rENM.reports | Automated reporting and trend summaries |
+| rENM.ai | AI-assisted analysis and document generation |
+
+---
+
+## Workflow Overview
+
+1. Assemble occurrence and climate data  
+2. Construct time-binned environmental datasets  
+3. Fit ensemble ecological niche models  
+4. Analyze temporal trends in suitability and structure  
+5. Generate reproducible reports  
+
+👉 Full workflow: https://github.com/rENM-Framework/rENM
+
+---
 
 ## Documentation
 
-(coming soon)
+(coming soon)  
+GitHub Pages site will provide extended documentation and tutorials
+
+---
+
+## Publications
+
+(coming soon)  
+Preprint and journal submission in preparation
+
+---
+
+## Reproducibility
+
+All analyses are designed to be:
+- Fully reproducible  
+- Version-controlled  
+- Data-traceable  
+
+---
+
+## License
+
+(choose and specify)
