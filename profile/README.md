@@ -57,29 +57,43 @@ This approach enables the detection of ecological responses to climate change ov
 
 ---
 
-## Documentation
+## Framework Resources
 
-(coming soon)  
-GitHub Pages site will provide extended documentation and tutorials
+| Component | Role |
+|----------|------|
+| rENM-documentation | User manual and package reference manuals  |
+| rENM-publications | Papers relating to rENM development and use |
+| rENM-scripts | Utility scripts |
 
 ---
 
 ## Publications
 
-(coming soon)  
-Preprint and journal submission in preparation
-
----
-
-## Reproducibility
-
-All analyses are designed to be:
-- Fully reproducible  
-- Version-controlled  
-- Data-traceable  
+Schnase, J. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
 
 ---
 
 ## License
 
-(choose and specify)
+MIT License
+
+Copyright (c) 2026 rENM-Framework contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
