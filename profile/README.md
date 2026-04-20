@@ -1,6 +1,6 @@
 # rENM Framework
 
-**A Modular Framework for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
+**A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
 
 ---
 
