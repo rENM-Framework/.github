@@ -15,10 +15,11 @@ The retrospective Ecological Niche Modeling (rENM) framework is an observational
 
 Rather than treating ecological niche models as static representations, rENM uses time-structured modeling to reveal:
 
-- Long-term trends in climatic suitability  
-- Shifts in niche centroids and geographic expression  
-- Changes in environmental structure across decades  
-- Bioclimatic velocity and directional movement in climate space  
+-   Long-term trends in climatic suitability
+-   Acceleration and deceleration in long-term suitability trends 
+-   Changes in environmental structure across decades
+-   Bioclimatic velocity and directional change
+-   Hot spots of potential climate change vulnerability 
 
 This approach enables the detection of ecological responses to climate change over 40+ year time horizons.
 
@@ -28,8 +29,8 @@ This approach enables the detection of ecological responses to climate change ov
 
 - Moves ENM from static prediction → dynamic observation
 - Enables trend detection across historical climate regimes
-- Bridges climate space reconstruction and geographic projection
 - Supports reproducible, data-driven ecological inference
+- Provides a modular platform for refinement and experimentation
 
 ---
 
@@ -49,10 +50,10 @@ This approach enables the detection of ecological responses to climate change ov
 
 ## Workflow Overview
 
-1. Assemble occurrence and climate data  
-2. Construct time-binned input datasets  
-3. Fit a time series of ensemble ecological niche models  
-4. Analyze temporal trends in suitability and structure  
+1. Assemble occurrence data and environmental predictors  
+2. Construct multi-decadal historical ENM time series 
+3. Analyze trends in climatic suitability and environmental structure  
+4. Perform GenAI-driven interpreations of the trend analyses 
 5. Generate reproducible reports  
 
 ---
@@ -69,7 +70,7 @@ This approach enables the detection of ecological responses to climate change ov
 
 ## Publications
 
-Schnase, J. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
+Schnase, J. et al. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
 
 ---
 
