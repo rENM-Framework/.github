@@ -11,26 +11,15 @@ https://github.com/rENM-Framework/rENM
 
 ## What is rENM?
 
-The retrospective Ecological Niche Modeling (rENM) framework is an observational system for reconstructing multi-decadal dynamics in climatic suitability and environmental structure. The rENM framework is adaptable to many type of organisms; however, it is currently designed to model climate change influences on North American bird species. Its capabilities span the past 45 years and draw on the citizen science observations contained in Cornell Lab's eBird collections and environmental data from NASA's Earth system models.
+The retrospective Ecological Niche Modeling (rENM) framework is a modular system for reconstructing and analyzing multi-decadal climate change influences on North American bird species. It draws on citizen science observations contained in Cornell Lab's eBird collections and environmental data from NASA's Earth system models. Rather than treating ecological niche models as static representations, the rENM framework uses time-structured modeling to reveal:
 
-Rather than treating ecological niche models as static representations, rENM uses time-structured modeling to reveal:
-
--   Long-term trends in climatic suitability
--   Acceleration and deceleration in long-term suitability trends 
+-   Long-term trends in climatic suitability for a species
+-   Acceleration and deceleration in these long-term trends 
 -   Changes in environmental structure across decades
--   Bioclimatic velocity and directional change
+-   Bioclimatic velocity and directional change in suitabiliy
 -   Hot spots of potential climate change vulnerability 
 
 This approach enables the detection of ecological responses to climate change over 40+ year time horizons.
-
----
-
-## Why it matters
-
-- Moves ENM from static prediction → dynamic observation
-- Enables trend detection across historical climate regimes
-- Supports reproducible, data-driven ecological inference
-- Provides a modular platform for refinement and experimentation
 
 ---
 
@@ -49,6 +38,8 @@ This approach enables the detection of ecological responses to climate change ov
 ---
 
 ## Workflow Overview
+
+The rENM framework's modules allow a user to do the following:
 
 1. Assemble occurrence data and environmental predictors  
 2. Construct multi-decadal historical ENM time series 
