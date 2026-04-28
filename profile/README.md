@@ -4,14 +4,16 @@
 
 ---
 
-👉 Start here: Full framework, workflow, and reproducible analysis  
+👉 **Start here** - Access the complete suite of framework R packages and supporting resources:  
 https://github.com/rENM-Framework/rENM
 
 ---
 
 ## What is rENM?
 
-The retrospective Ecological Niche Modeling (rENM) framework is a modular system for reconstructing and analyzing multi-decadal climate change influences on North American bird species. It draws on citizen science observations contained in Cornell Lab's eBird collections and environmental data from NASA's Earth system models. Rather than treating ecological niche models as static representations, the rENM framework uses time-structured modeling to reveal:
+**Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species’ responses to changing environmental conditions. The **rENM framework** is a modular suite of R packages designed to support rENM analyses. 
+
+By revealing long-term patterns, rENMs provide a powerful observational lens for addressing biological questions and assessing both the current and future conservation status of species. Rather than treating ecological niche models as static representations, the rENM framework uses time-structured modeling to reveal:
 
 -   Long-term trends in climatic suitability for a species
 -   Acceleration and deceleration in these long-term trends 
@@ -19,7 +21,7 @@ The retrospective Ecological Niche Modeling (rENM) framework is a modular system
 -   Bioclimatic velocity and directional change in suitabiliy
 -   Hot spots of potential climate change vulnerability 
 
-This approach enables the detection of ecological responses to climate change over 40+ year time horizons.
+Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology’s eBird database** alongside environmental data derived from **NASA Earth system model**..
 
 ---
 
@@ -45,7 +47,10 @@ The rENM framework's modules allow a user to do the following:
 2. Construct multi-decadal historical ENM time series 
 3. Analyze trends in climatic suitability and environmental structure  
 4. Perform GenAI-driven interpreations of the trend analyses 
-5. Generate reproducible reports  
+5. Generate reproducible reports
+
+Download the rENM framework's user manual:\
+[User-Manual.pdf](https://github.com/user-attachments/files/27170160/User-Manual.pdf)
 
 ---
 
@@ -53,7 +58,7 @@ The rENM framework's modules allow a user to do the following:
 
 | Component | Role |
 |----------|------|
-| rENM-documentation | User manual and package reference manuals  |
+| rENM-documentation | User manual and R package reference manuals  |
 | rENM-publications | Papers relating to rENM development and use |
 | rENM-scripts | Utility scripts |
 
@@ -61,7 +66,21 @@ The rENM framework's modules allow a user to do the following:
 
 ## Publications
 
-Schnase, J. et al. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a modular system for reconstructing and analyzing long-term ecological niche dynamics.
+
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2026. Shifts in seasonal
+climatic suitability for Cassin’s Sparrow (<i>Peucaea cassinii</i>) over four decades. The Southwestern
+Naturalist, 70(1):1-17. https://doi.org/10.1894/0038-4909-70.1.7
+
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2025. Shifts in breeding phenology for Cassin’s Sparrow (Peucaea cassinii) over four decades. Journal of Field Ornithology 96(3):3. https://doi.org/10.5751/JFO-00691-960303
+
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2024. Complex changes in climatic suitability for Cassin’s Sparrow (Peucaea cassinii) revealed by retrospective ecological niche modeling. Journal of Field Ornithology 95(1):9. https://doi.org/10.5751/JFO-00432-950109
+
+Schnase, J.L., and M.L. Carroll. 2023. “The MMX Toolkit: High-Performance, Reanalysis-Based Climatic Suitability Modeling to Advance Avian Conservation.” In Proceedings of the 2023 Conference on Big Data from Space (BiDS’23): 6-9 November 2023, edited by P. Soille, S. Lumnitz, and S. Albani, 299–303. Austrian Center, Vienna: Publications Office of the European. https://doi.org/10.2760/46796.
+
+Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection inf ecological niche modeling: a case study using Cassin’s Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. doi: 10.1371/journal.pone.0257502. PMID: 35061658; PMCID: PMC8782318.
+
+Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. doi:10.1371/journal.pone.0237208. PMID: 33657125; PMCID: PMC7928495.
 
 ---
 
