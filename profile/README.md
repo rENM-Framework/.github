@@ -4,8 +4,8 @@
 
 ---
 
-👉 **Start here** - Access the complete suite of framework R packages and supporting resources:  
-https://github.com/rENM-Framework/rENM
+👉 **Start here** - Download installation instructions and workflow examples:\
+[rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/27205337/rENM-Framework-User-Manual.pdf)
 
 ---
 
@@ -36,21 +36,17 @@ Although this analytical approach is broadly applicable across taxa, the current
 | rENM.reports | Report generation tools for the rENM framework |
 | rENM.ai | GenAI tools for the rENM framework |
 
-
 ---
 
 ## Workflow Overview
+rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports
 
 The rENM framework's modules allow a user to do the following:
-
-1. Assemble occurrence data and environmental predictors  
-2. Construct multi-decadal historical ENM time series 
-3. Analyze trends in climatic suitability and environmental structure  
-4. Perform GenAI-driven interpreations of the trend analyses 
-5. Generate reproducible reports
-
-Download the rENM framework's user manual:\
-[User-Manual.pdf](https://github.com/user-attachments/files/27170160/User-Manual.pdf)
+1. Assemble occurrence data and environmental predictors (`rENM.core`, `rENM.data`) 
+2. Construct multi-decadal historical ENM time series (`rENM.model`)
+3. Analyze trends in climatic suitability and environmental structure (`rENM.analysis`) 
+4. Perform GenAI-driven interpreations of the trend analyses (`rENM.ai`)
+5. Generate reproducible reports (`rENM.reports`)
 
 ---
 
@@ -61,6 +57,35 @@ Download the rENM framework's user manual:\
 | rENM-documentation | User manual and R package reference manuals  |
 | rENM-publications | Papers relating to rENM development and use |
 | rENM-scripts | Utility scripts |
+
+---
+
+## Repositories
+
+<https://github.com/rENM-Framework/rENM.core>\
+<https://github.com/rENM-Framework/rENM.data>\
+<https://github.com/rENM-Framework/rENM.model>\
+<https://github.com/rENM-Framework/rENM.analysis>\
+<https://github.com/rENM-Framework/rENM.reports>\
+<https://github.com/rENM-Framework/rENM.ai>
+
+<https://github.com/rENM-Framework/rENM-documentation>\
+<https://github.com/rENM-Framework/rENM-publications>\
+<https://github.com/rENM-Framework/rENM-scripts>
+
+---
+
+## Installation
+
+``` r
+install.packages("devtools")
+devtools::install_github("rENM-Framework/rENM.core")
+devtools::install_github("rENM-Framework/rENM.data")
+devtools::install_github("rENM-Framework/rENM.model")
+devtools::install_github("rENM-Framework/rENM.analysis")
+devtools::install_github("rENM-Framework/rENM.reports")
+devtools::install_github("rENM-Framework/rENM.ai")
+```
 
 ---
 
@@ -81,6 +106,13 @@ Schnase, J.L., and M.L. Carroll. 2023. “The MMX Toolkit: High-Performance, Rea
 Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection inf ecological niche modeling: a case study using Cassin’s Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. https://doi.org/10.1371/journal.pone.0257502. PMID: 35061658; PMCID: PMC8782318. 
 
 Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. https://doi.org/10.1371/journal.pone.0237208. PMID: 33657125; PMCID: PMC7928495.
+
+---
+
+## Links
+
+-   Contact: rENM.Framework@gmail.com
+-   Issues:  <https://github.com/rENM-Framework/rENM/issues>
 
 ---
 
