@@ -7,8 +7,6 @@
 👉 **Start here** - Download installation instructions and workflow examples:\
 [rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/27205337/rENM-Framework-User-Manual.pdf)
 
----
-
 ## What is rENM?
 
 **Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species’ responses to changing environmental conditions. The **rENM framework** is a modular suite of R packages designed to support rENM analyses. 
@@ -23,8 +21,6 @@ By revealing long-term patterns, rENMs provide a powerful observational lens for
 
 Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology’s eBird database** alongside environmental data derived from **NASA Earth system model**..
 
----
-
 ## Framework Components
 
 | Component | Role |
@@ -36,8 +32,6 @@ Although this analytical approach is broadly applicable across taxa, the current
 | rENM.reports | Report generation tools for the rENM framework |
 | rENM.ai | GenAI tools for the rENM framework |
 
----
-
 ## Workflow Overview
 rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports
 
@@ -48,8 +42,6 @@ The rENM framework's modules allow a user to do the following:
 4. Perform GenAI-driven interpreations of the trend analyses (`rENM.ai`)
 5. Generate reproducible reports (`rENM.reports`)
 
----
-
 ## Framework Resources
 
 | Component | Role |
@@ -57,8 +49,6 @@ The rENM framework's modules allow a user to do the following:
 | rENM-documentation | User manual and R package reference manuals  |
 | rENM-publications | Papers relating to rENM development and use |
 | rENM-scripts | Utility scripts |
-
----
 
 ## Repositories
 
@@ -73,8 +63,6 @@ The rENM framework's modules allow a user to do the following:
 <https://github.com/rENM-Framework/rENM-publications>\
 <https://github.com/rENM-Framework/rENM-scripts>
 
----
-
 ## Installation
 
 ``` r
@@ -86,8 +74,6 @@ devtools::install_github("rENM-Framework/rENM.analysis")
 devtools::install_github("rENM-Framework/rENM.reports")
 devtools::install_github("rENM-Framework/rENM.ai")
 ```
-
----
 
 ## Publications
 
@@ -106,8 +92,6 @@ Schnase, J.L., and M.L. Carroll. 2023. “The MMX Toolkit: High-Performance, Rea
 Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection inf ecological niche modeling: a case study using Cassin’s Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. https://doi.org/10.1371/journal.pone.0257502. PMID: 35061658; PMCID: PMC8782318. 
 
 Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. https://doi.org/10.1371/journal.pone.0237208. PMID: 33657125; PMCID: PMC7928495.
-
----
 
 ## License
 
@@ -136,4 +120,6 @@ SOFTWARE.
 ---
 
 Contact: rENM.Framework@gmail.com | Issues:  <https://github.com/rENM-Framework/rENM/issues>
+
+---
 
