@@ -33,7 +33,7 @@ Although this analytical approach is broadly applicable across taxa, the current
 | rENM.ai | GenAI tools for the rENM framework |
 
 ## Workflow Overview
-rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports
+**rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports**
 
 The rENM framework's modules allow a user to do the following:
 1. Assemble occurrence data and environmental predictors (`rENM.core`, `rENM.data`) 
@@ -50,7 +50,13 @@ The rENM framework's modules allow a user to do the following:
 | rENM-publications | Papers relating to rENM development and use |
 | rENM-scripts | Utility scripts |
 
-## Repositories
+## Example Reports
+
+[Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_docs/CASP-Final-Report.pdf)\
+[Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_docs/GRRO-Final-Report.pdf)\
+[Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_docs/BCRF-Final-Report.pdf)
+
+## Framework Repositories
 
 <https://github.com/rENM-Framework/rENM.core>\
 <https://github.com/rENM-Framework/rENM.data>\
@@ -63,7 +69,7 @@ The rENM framework's modules allow a user to do the following:
 <https://github.com/rENM-Framework/rENM-publications>\
 <https://github.com/rENM-Framework/rENM-scripts>
 
-## Installation
+## Package Installation
 
 ``` r
 install.packages("devtools")
@@ -75,7 +81,7 @@ devtools::install_github("rENM-Framework/rENM.reports")
 devtools::install_github("rENM-Framework/rENM.ai")
 ```
 
-## Publications
+## Related Publications
 
 Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a modular system for reconstructing and analyzing long-term ecological niche dynamics.
 
@@ -119,7 +125,7 @@ SOFTWARE.
 
 ---
 
-Contact: rENM.Framework@gmail.com | Issues:  <https://github.com/rENM-Framework/rENM/issues>
+**Contact:** rENM.Framework@gmail.com | **Issues:**  <https://github.com/rENM-Framework/rENM/issues>
 
 ---
 
