@@ -58,6 +58,7 @@ The rENM framework's modules allow a user to do the following:
 
 ## Framework Repositories
 
+**_R packages:_**\
 <https://github.com/rENM-Framework/rENM.core>\
 <https://github.com/rENM-Framework/rENM.data>\
 <https://github.com/rENM-Framework/rENM.model>\
@@ -65,6 +66,7 @@ The rENM framework's modules allow a user to do the following:
 <https://github.com/rENM-Framework/rENM.reports>\
 <https://github.com/rENM-Framework/rENM.ai>
 
+**_Other resources:_**\
 <https://github.com/rENM-Framework/rENM-documentation>\
 <https://github.com/rENM-Framework/rENM-publications>\
 <https://github.com/rENM-Framework/rENM-scripts>
