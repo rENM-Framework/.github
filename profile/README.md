@@ -16,7 +16,7 @@ By revealing long-term patterns, rENMs provide a powerful observational lens for
 -   Long-term trends in climatic suitability for a species
 -   Acceleration and deceleration in these long-term trends 
 -   Changes in environmental structure across decades
--   Bioclimatic velocity and directional change in suitabiliy
+-   Bioclimatic velocity and directional change in suitability
 -   Hot spots of potential climate change vulnerability 
 
 Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology’s eBird database** alongside environmental data derived from **NASA Earth system models**.
