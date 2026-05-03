@@ -9,9 +9,9 @@
 
 ## What is rENM?
 
-**Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species’ responses to changing environmental conditions. The **rENM framework** is a modular suite of R packages designed to support rENM analyses. 
+**Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species’ responses to changing environmental conditions. The **rENM framework** is a **modular suite of R packages** designed to support rENM analyses. 
 
-By revealing long-term patterns, rENMs provide a powerful observational lens for addressing biological questions and assessing both the current and future conservation status of species. Rather than treating ecological niche models as static representations, the rENM framework uses time-structured modeling to reveal:
+By revealing long-term patterns, rENMs provide a powerful **observational lens** for addressing biological questions and assessing both the current and future conservation status of species. Rather than treating ecological niche models as static representations, the rENM framework uses **time-structured modeling** to reveal:
 
 -   Long-term trends in climatic suitability for a species
 -   Acceleration and deceleration in these long-term trends 
