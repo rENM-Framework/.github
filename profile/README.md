@@ -24,7 +24,7 @@ Although this analytical approach is broadly applicable across taxa, the current
 ## Framework Components
 
 | Component | Role |
-|----------|------|
+|---|---|
 | rENM.core | Shared utilities for the rENM framework |
 | rENM.data | Data assembly tools for the rENM framework |
 | rENM.model | Modeling tools for the rENM framework |
@@ -45,16 +45,20 @@ The rENM framework's modules allow a user to do the following:
 ## Framework Resources
 
 | Component | Role |
-|----------|------|
+|---|---|
 | rENM-documentation | User manual and R package reference manuals  |
 | rENM-publications | Papers relating to rENM development and use |
 | rENM-scripts | Utility scripts |
 
 ## Example Reports
 
-[Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_docs/CASP-Final-Report.pdf)\
-[Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_docs/GRRO-Final-Report.pdf)\
-[Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_docs/BCRF-Final-Report.pdf)
+The rENM Framework includes an experiemental module that draws into the interpretive capabilities of the ChatGPT and Claude. 
+
+| ChatGPT Report | Claude Report |
+|---|---|
+| [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_docs/CASP-Final-Report.pdf) | [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_docs/CASP-Final-Report2.pdf) |
+| [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_docs/GRRO-Final-Report.pdf) | [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_docs/GRRO-Final-Report2.pdf) |
+| [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_docs/BCRF-Final-Report.pdf) | [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_docs/BCRF-Final-Report2.pdf) |
 
 ## Framework Repositories
 
