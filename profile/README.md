@@ -53,7 +53,7 @@ The rENM framework's modules allow a user to do the following:
 
 ## Example Reports
 
-The rENM Framework includes an experiemental module that draws into the interpretive capabilities of the ChatGPT and Claude. 
+The rENM Framework includes an experiemental module that draws on the interpretive capabilities of the ChatGPT and Claude. 
 
 | ChatGPT Report | Claude Report |
 |---|---|
