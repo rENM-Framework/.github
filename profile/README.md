@@ -39,7 +39,7 @@ The rENM framework's modules allow a user to do the following:
 1. Assemble occurrence data and environmental predictors (`rENM.core`, `rENM.data`) 
 2. Construct multi-decadal historical ENM time series (`rENM.model`)
 3. Analyze trends in climatic suitability and environmental structure (`rENM.analysis`) 
-4. Perform GenAI-driven interpreations of the trend analyses (`rENM.ai`)
+4. Perform GenAI-driven interpretations of the trend analyses (`rENM.ai`)
 5. Generate reproducible reports (`rENM.reports`)
 
 ## Framework Resources
@@ -52,7 +52,7 @@ The rENM framework's modules allow a user to do the following:
 
 ## Example Reports
 
-The rENM Framework includes an experiemental module that draws on the interpretive capabilities of the ChatGPT and Claude. 
+The rENM Framework includes an experimental module that draws on the interpretive capabilities of the ChatGPT and Claude. 
 
 | ChatGPT Report | Claude Report |
 |---|---|
