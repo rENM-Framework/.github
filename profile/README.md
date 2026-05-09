@@ -2,57 +2,76 @@
 
 **A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
 
----
+  ---
 
-👉 **Start here** - Download installation instructions and workflow examples:\
+  👉 **Start here** - Download installation instructions and workflow examples:\
 [rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/27452573/rENM-Framework-User-Manual.pdf)
 
 ## What is rENM?
 
-**Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species’ responses to changing environmental conditions. The **rENM framework** is a **modular suite of R packages** designed to support rENM analyses. 
+**Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species' responses to changing environmental conditions. The **rENM framework** is a **modular suite of R packages** designed to support rENM analyses.
 
 By revealing long-term patterns, rENMs provide a powerful **observational lens** for addressing biological questions and assessing both the current and future conservation status of species. Rather than treating ecological niche models as static representations, the rENM framework uses **time-structured modeling** to reveal:
 
 -   Long-term trends in climatic suitability for a species
--   Acceleration and deceleration in these long-term trends 
+-   Acceleration and deceleration in these long-term trends
 -   Changes in environmental structure across decades
 -   Bioclimatic velocity and directional change in suitability
--   Hot spots of potential climate change vulnerability 
+-   Hot spots of potential climate change vulnerability
 
-Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology’s eBird database** alongside environmental data derived from **NASA Earth system models**.
+Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology's eBird database** alongside environmental data derived from **NASA Earth system models**.
 
 ## Framework Components
 
 | Component | Role |
-|---|---|
-| rENM.core | Shared utilities for the rENM framework |
-| rENM.data | Data assembly tools for the rENM framework |
-| rENM.model | Modeling tools for the rENM framework |
-| rENM.analysis | Analysis tools for the rENM framework |
-| rENM.reports | Report generation tools for the rENM framework |
-| rENM.ai | GenAI tools for the rENM framework |
+  |---|---|
+  | rENM | Top-level orchestration package for the rENM framework |
+  | rENM.core | Shared utilities for the rENM framework |
+  | rENM.data | Data assembly tools for the rENM framework |
+  | rENM.model | Modeling tools for the rENM framework |
+  | rENM.analysis | Analysis tools for the rENM framework |
+  | rENM.reports | Report generation tools for the rENM framework |
+  | rENM.ai | GenAI tools for the rENM framework |
+
+  ## Usage
+
+  The simplest way to run the complete rENM pipeline for a species is through
+the top-level orchestration package:
+
+  ``` r
+library(rENM)
+rENM("CASP")
+```
+
+This single call executes all pipeline stages in sequence — data assembly,
+time-series construction, trend analysis, AI interpretation, and report
+generation — for the target species. See the workflow overview below for
+details on what each stage does.
 
 ## Workflow Overview
-**rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports**
 
-The rENM framework's modules allow a user to do the following:
-1. Assemble occurrence data and environmental predictors (`rENM.core`, `rENM.data`) 
-2. Construct multi-decadal historical ENM time series (`rENM.model`)
-3. Analyze trends in climatic suitability and environmental structure (`rENM.analysis`) 
-4. Perform GenAI-driven interpretations of the trend analyses (`rENM.ai`)
-5. Generate reproducible reports (`rENM.reports`)
+**rENM → rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports**
+
+  The rENM framework's modules allow a user to do the following:
+
+1. Orchestrate the complete pipeline for a species (`rENM`)
+2. Assemble occurrence data and environmental predictors (`rENM.core`, `rENM.data`)
+3. Construct multi-decadal historical ENM time series (`rENM.model`)
+4. Analyze trends in climatic suitability and environmental structure (`rENM.analysis`)
+5. Perform GenAI-driven interpretations of the trend analyses (`rENM.ai`)
+6. Generate reproducible reports (`rENM.reports`)
 
 ## Framework Resources
 
 | Component | Role |
 |---|---|
-| rENM-documentation | User manual and R package reference manuals  |
+| rENM-documentation | User manual and R package reference manuals |
 | rENM-publications | Papers relating to rENM development and use |
 | rENM-scripts | Utility scripts |
 
 ## Example Reports
 
-The rENM Framework includes an experimental module that draws on the interpretive capabilities of the ChatGPT and Claude. 
+The rENM Framework includes an experimental module that draws on the interpretive capabilities of ChatGPT and Claude.
 
 | ChatGPT Report | Claude Report |
 |---|---|
@@ -63,6 +82,7 @@ The rENM Framework includes an experimental module that draws on the interpretiv
 ## Framework Repositories
 
 **_R packages:_**\
+<https://github.com/rENM-Framework/rENM>\
 <https://github.com/rENM-Framework/rENM.core>\
 <https://github.com/rENM-Framework/rENM.data>\
 <https://github.com/rENM-Framework/rENM.model>\
@@ -79,6 +99,7 @@ The rENM Framework includes an experimental module that draws on the interpretiv
 
 ``` r
 install.packages("devtools")
+devtools::install_github("rENM-Framework/rENM")
 devtools::install_github("rENM-Framework/rENM.core")
 devtools::install_github("rENM-Framework/rENM.data")
 devtools::install_github("rENM-Framework/rENM.model")
@@ -101,7 +122,7 @@ Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2024. Comple
 
 Schnase, J.L., and M.L. Carroll. 2023. “The MMX Toolkit: High-Performance, Reanalysis-Based Climatic Suitability Modeling to Advance Avian Conservation.” In Proceedings of the 2023 Conference on Big Data from Space (BiDS’23): 6-9 November 2023, edited by P. Soille, S. Lumnitz, and S. Albani, 299–303. Austrian Center, Vienna: Publications Office of the European. https://doi.org/10.2760/46796.
 
-Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection inf ecological niche modeling: a case study using Cassin’s Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. https://doi.org/10.1371/journal.pone.0257502. PMID: 35061658; PMCID: PMC8782318. 
+Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection inf ecological niche modeling: a case study using Cassin’s Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. https://doi.org/10.1371/journal.pone.0257502. PMID: 35061658; PMCID: PMC8782318.
 
 Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. https://doi.org/10.1371/journal.pone.0237208. PMID: 33657125; PMCID: PMC7928495.
 
@@ -109,7 +130,7 @@ Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Ma
 
 MIT License
 
-Copyright (c) 2026 rENM-Framework contributors
+Copyright (c) 2021-2026 John L. Schnase and Collaborators
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
