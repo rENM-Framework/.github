@@ -71,7 +71,7 @@ details on what each stage does.
 
 ## Example Reports
 
-The rENM Framework includes an experimental AI-assisted module that leverages the interpretive capabilities of ChatGPT and Claude to generate preliminary ecological analyses for review and evaluation by domain experts. Continued refinement, validation, and expansion of these capabilities are an important area of ongoing development. The following are summary analyses for the three bird species included in the Framework’s example dataset.
+The rENM Framework includes an experimental AI-assisted module that leverages the interpretive capabilities of ChatGPT and Claude to generate preliminary ecological analyses for review and evaluation by domain experts. Continued refinement, validation, and expansion of these capabilities are an important area of ongoing development. The following are summary analyses for the three bird species included in the Framework’s example dataset. You can browse these online.
 
 | ChatGPT Report | Claude Report |
 |---|---|
@@ -81,11 +81,13 @@ The rENM Framework includes an experimental AI-assisted module that leverages th
 
 ## Example Runs
 
-The rENM Framework generates a comprehensive collection of output products that can support further analysis, conservation status assessments, climate change impact projections, and conservation policy development. Continued refinement, validation, and expansion of these capabilities also remain an important area of ongoing development. The following are example output collections for the three bird species included in the Framework’s example datase.
+The rENM Framework generates a collection of output products that can support further analysis, conservation status assessments, climate change impact projections, and conservation policy development. Continued refinement, validation, and expansion of these capabilities also remain important areas of ongoing development. The following are collections for the three bird species included in the Framework’s example dataset. Clicking the links below will download ZIP archives containing the complete output collections, which can then be browsed locally on your machine.
 
-| Species | Banding Code |
-|---|---|
-| [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://console.cloud.google.com/storage/browser/renm_runs/BCRF;tab=objects?project=project-95d5c791-5c74-4534-ae1&prefix=&forceOnObjectsSortingFiltering=false) | 
+| Species | Banding Code | File Size | Compute Time | ChatGPT Cost |
+|---|---|---|---|---|
+| [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_runs/CASP.zip) | CASP | 347.1 MB | 19.3 mins | $0.09 |
+| [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_runs/GRRO.zip) | GRRO | 474.1 MB | 19.3 mins | $0.16 |
+| [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_runs/BCRF.zip)| BCRF | 128.1 MB | 15.1 mins | $0.11 |
 
 ## Framework Repositories
 
