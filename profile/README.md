@@ -71,13 +71,21 @@ details on what each stage does.
 
 ## Example Reports
 
-The rENM Framework includes an experimental module that draws on the interpretive capabilities of ChatGPT and Claude.
+The rENM Framework includes an experimental AI-assisted module that leverages the interpretive capabilities of ChatGPT and Claude to generate preliminary ecological analyses for review and evaluation by domain experts. Continued refinement, validation, and expansion of these capabilities are an important area of ongoing development. The following are summary analyses for the three bird species included in the Framework’s example dataset.
 
 | ChatGPT Report | Claude Report |
 |---|---|
 | [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_docs/CASP-Final-Report.pdf) | [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://storage.googleapis.com/renm_docs/CASP-Final-Report2.pdf) |
 | [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_docs/GRRO-Final-Report.pdf) | [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_docs/GRRO-Final-Report2.pdf) |
 | [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_docs/BCRF-Final-Report.pdf) | [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_docs/BCRF-Final-Report2.pdf) |
+
+## Example Runs
+
+The rENM Framework generates a comprehensive collection of output products that can support further analysis, conservation status assessments, climate change impact projections, and conservation policy development. Continued refinement, validation, and expansion of these capabilities also remain an important area of ongoing development. The following are example output collections for the three bird species included in the Framework’s example datase.
+
+| Species | Banding Code |
+|---|---|
+| [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://console.cloud.google.com/storage/browser/renm_runs/BCRF;tab=objects?project=project-95d5c791-5c74-4534-ae1&prefix=&forceOnObjectsSortingFiltering=false) | 
 
 ## Framework Repositories
 
