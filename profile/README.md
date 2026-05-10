@@ -120,7 +120,7 @@ devtools::install_github("rENM-Framework/rENM.ai")
 
 ## Related Publications
 
-Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a modular system for reconstructing and analyzing long-term ecological niche dynamics.
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
 
 Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2026. Shifts in seasonal
 climatic suitability for Cassin’s Sparrow (<i>Peucaea cassinii</i>) over four decades. The Southwestern
