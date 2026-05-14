@@ -115,6 +115,10 @@ devtools::install_github("rENM-Framework/rENM.reports")
 devtools::install_github("rENM-Framework/rENM.ai")
 ```
 
+## Research Status Disclaimer
+
+The rENM Framework is an experimental research platform currently under active development. We are releaseing the software, workflows, and analytical methods to encourage exploration, evaluation, replication, and further refinement by the broader community. While the framework has produced promising results in our own studies — including potentially important new insights into the climatic ecology and natural history of Cassin’s Sparrow — these approaches should be regarded as exploratory and investigational rather than fully validated operational methods. We hope others will test the framework, evaluate its strengths and limitations, and contribute to the continued advancement of climate-informed ecological modeling and conservation analysis.
+
 ## Related Publications
 
 Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
