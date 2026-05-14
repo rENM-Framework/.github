@@ -43,7 +43,7 @@ library(rENM)
 rENM("CASP")
 ```
 
-This single call executes all pipeline stages in sequence — data assembly,
+At this point in our development, rENM() functions as a determinisitic supervisory agent over this scientific workflow. This single call executes all pipeline stages in sequence — data assembly,
 time-series construction, trend analysis, AI interpretation, and report
 generation — for the target species. See the workflow overview below for
 details on what each stage does.
