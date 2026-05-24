@@ -7,11 +7,16 @@
 The rENM Framework integrates 45 years (1980–2020) of eBird citizen science occurrence records with NASA's MERRA-2 reanalysis data to reconstruct the spatio-temporal dynamics of climate-driven niche change in North American bird species. Rather than treating ecological niche models as static snapshots, rENM uses time-structured modeling to reveal how — and how fast — species' climatic environments have shifted across decades.
 
 The complete pipeline can be run from a single function call:
-
 ``` r
 library(rENM)
 rENM("CASP")   # Cassin's Sparrow, for example, or any four-letter banding code ...
 ```
+---
+
+👉 **Start here** - Download the rENM Framework User Manual:
+[rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/28195648/rENM-Framework-User-Manual.pdf)
+
+---
 
 ## What is rENM?
 
