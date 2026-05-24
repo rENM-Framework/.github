@@ -1,17 +1,21 @@
 # rENM Framework
 
-**A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ---
+**A modular R system for reconstructing and analyzing long-term ecological niche dynamics in North American birds**
 
-  👉 **Start here** - Download installation instructions and workflow examples:\
-[rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/27452573/rENM-Framework-User-Manual.pdf)
+The rENM Framework integrates 45 years (1980–2020) of eBird citizen science occurrence records with NASA's MERRA-2 reanalysis data to reconstruct the spatio-temporal dynamics of climate-driven niche change in North American bird species. Rather than treating ecological niche models as static snapshots, rENM uses time-structured modeling to reveal how — and how fast — species' climatic environments have shifted across decades.
+
+The complete pipeline can be run from a single function call:
+
+``` r
+library(rENM)
+rENM("CASP")   # Cassin's Sparrow, for example, or any four-letter banding code ...
+```
 
 ## What is rENM?
 
-**Retrospective ecological niche modeling (rENM)** integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species' responses to changing environmental conditions. The **rENM framework** is a **modular suite of R packages** designed to support rENM analyses.
-
-By revealing long-term patterns, rENMs provide a powerful **observational lens** for addressing biological questions and assessing both the **current and future conservation status of species**. Rather than treating ecological niche models as static representations, the rENM framework uses **time-structured modeling** to reveal:
+Retrospective ecological niche modeling (rENM) integrates historical species occurrence records with historical environmental data to reconstruct and analyze the spatio-temporal dynamics of species' responses to changing environmental conditions. The rENM Framework is a modular suite of R packages designed to support rENM analyses. By revealing long-term patterns, rENMs provide a powerful observational lens for addressing biological questions and assessing both the current and future conservation status of species, including:
 
 -   Long-term trends in climatic suitability for a species
 -   Acceleration and deceleration in these long-term trends
@@ -19,31 +23,17 @@ By revealing long-term patterns, rENMs provide a powerful **observational lens**
 -   Bioclimatic velocity and directional change in suitability
 -   Hot spots of potential climate change vulnerability
 
-Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology's eBird database** alongside environmental data derived from **NASA Earth system models**.
-
 ## Framework Components
 
 | Component | Role |
-  |---|---|
-  | rENM | Top-level orchestration package for the rENM framework |
-  | rENM.core | Shared utilities for the rENM framework |
-  | rENM.data | Data assembly tools for the rENM framework |
-  | rENM.model | Modeling tools for the rENM framework |
-  | rENM.analysis | Analysis tools for the rENM framework |
-  | rENM.reports | Report generation tools for the rENM framework |
-  | rENM.ai | GenAI tools for the rENM framework |
-
-  ## Usage
-
-  The simplest way to run the complete rENM pipeline for a species is through
-the top-level orchestration package:
-
-  ``` r
-library(rENM)
-rENM("CASP")
-```
-
-At this stage of development, rENM() functions as a deterministic supervisory agent for the scientific workflow. A single function call executes the entire pipeline in sequence — including data assembly, time-series construction, trend analysis, AI-assisted interpretation, and report generation — for the target species. The workflow overview below describes the purpose and operations of each stage in detail.
+|---|---|
+| [`rENM`](https://github.com/rENM-Framework/rENM) | Top-level orchestration; the single entry point for running the complete pipeline |
+| [`rENM.core`](https://github.com/rENM-Framework/rENM.core) | Shared infrastructure: project directory resolution, species and variable metadata, logging |
+| [`rENM.data`](https://github.com/rENM-Framework/rENM.data) | eBird occurrence extraction and MERRA-2 variable assembly, thinning, and temporal binning |
+| [`rENM.model`](https://github.com/rENM-Framework/rENM.model) | Ensemble ENM construction and five-year time-series assembly using the sdm framework |
+| [`rENM.analysis`](https://github.com/rENM-Framework/rENM.analysis) | Suitability trends, centroid tracking, bioclimatic velocity, hotspot detection, range change |
+| [`rENM.ai`](https://github.com/rENM-Framework/rENM.ai) | AI-ready package assembly and submission to Claude and ChatGPT for interpretive analysis |
+| [`rENM.reports`](https://github.com/rENM-Framework/rENM.reports) | Summary tables, per-topic report pages, and final species PDF report assembly |
 
 ## Workflow Overview
 
@@ -62,9 +52,8 @@ At this stage of development, rENM() functions as a deterministic supervisory ag
 
 | Component | Role |
 |---|---|
-| rENM-documentation | User manual and R package reference manuals |
-| rENM-publications | Papers relating to rENM development and use |
-| rENM-scripts | Utility scripts |
+| [rENM-documentation](https://github.com/rENM-Framework/rENM-documentation) | User manual and R package reference manuals |
+| [rENM-publications](https://github.com/rENM-Framework/rENM-publications) | Papers relating to rENM development and use |
 
 ## Example Reports
 
@@ -86,40 +75,22 @@ The rENM Framework generates a collection of output products that can support fu
 | [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://storage.googleapis.com/renm_runs/GRRO.zip) | GRRO | 474.1 MB | 19.3 mins | $0.16 |
 | [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://storage.googleapis.com/renm_runs/BCRF.zip)| BCRF | 128.1 MB | 15.1 mins | $0.11 |
 
-## Framework Repositories
+## Installation
 
-**_R packages:_**\
-<https://github.com/rENM-Framework/rENM>\
-<https://github.com/rENM-Framework/rENM.core>\
-<https://github.com/rENM-Framework/rENM.data>\
-<https://github.com/rENM-Framework/rENM.model>\
-<https://github.com/rENM-Framework/rENM.analysis>\
-<https://github.com/rENM-Framework/rENM.reports>\
-<https://github.com/rENM-Framework/rENM.ai>
-
-**_Other resources:_**\
-<https://github.com/rENM-Framework/rENM-documentation>\
-<https://github.com/rENM-Framework/rENM-publications>\
-<https://github.com/rENM-Framework/rENM-scripts>
-
-## Package Installation
+Install Framework packages from GitHub in dependency order:
 
 ``` r
-install.packages("devtools")
-devtools::install_github("rENM-Framework/rENM")
-devtools::install_github("rENM-Framework/rENM.core")
-devtools::install_github("rENM-Framework/rENM.data")
-devtools::install_github("rENM-Framework/rENM.model")
-devtools::install_github("rENM-Framework/rENM.analysis")
-devtools::install_github("rENM-Framework/rENM.reports")
-devtools::install_github("rENM-Framework/rENM.ai")
+# install.packages("remotes")
+remotes::install_github("rENM-Framework/rENM.core")
+remotes::install_github("rENM-Framework/rENM.data")
+remotes::install_github("rENM-Framework/rENM.model")
+remotes::install_github("rENM-Framework/rENM.analysis")
+remotes::install_github("rENM-Framework/rENM.ai")
+remotes::install_github("rENM-Framework/rENM.reports")
+remotes::install_github("rENM-Framework/rENM")
 ```
 
-## Research Status Disclaimer
-
-The rENM Framework is an experimental research platform currently under active development. We are releaseing the software, workflows, and analytical methods to encourage exploration, evaluation, replication, and further refinement by the broader community. While the framework has produced promising results in our own studies — including potentially important new insights into the climatic ecology and natural history of Cassin’s Sparrow — these approaches should be regarded as exploratory and investigational rather than fully validated operational methods. We hope others will test the framework, evaluate its strengths and limitations, and contribute to the continued advancement of climate-informed ecological modeling and conservation analysis.
-
-## Related Publications
+## Selected Publications
 
 Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
 
@@ -137,33 +108,9 @@ Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection inf ecologica
 
 Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. https://doi.org/10.1371/journal.pone.0237208. PMID: 33657125; PMCID: PMC7928495.
 
-## License
+## Status and Support
 
-MIT License
+The rENM Framework is an active research platform under ongoing development, provided for educational and research purposes. It is distributed without formal technical support. Feedback and contributions are welcome at [rENM.Framework\@gmail.com](mailto:rENM.Framework@gmail.com).
 
-Copyright (c) 2021-2026 John L. Schnase and Collaborators
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
----
-
-**Contact:** rENM.Framework@gmail.com | **Issues:**  <https://github.com/rENM-Framework/rENM/issues>
-
----
+© 2021–2026 John L. Schnase and Collaborators  \|  MIT License
 
