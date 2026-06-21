@@ -1,3 +1,4 @@
+[rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/29181578/rENM-Framework-User-Manual.pdf)
 [rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/29179954/rENM-Framework-User-Manual.pdf)
 # rENM Framework
 
@@ -15,8 +16,7 @@ rENM("CASP")   # Cassin's Sparrow, for example, or any four-letter banding code 
 ---
 
 👉 **Start here** - Download the rENM Framework User Manual:
-[rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/29179980/rENM-Framework-User-Manual.pdf)
-
+[rENM-Framework-User-Manual.pdf](https://github.com/user-attachments/files/29181582/rENM-Framework-User-Manual.pdf)
 
 ---
 
