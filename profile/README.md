@@ -2,7 +2,9 @@
 
 **A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
 
-[![GitHub release](https://img.shields.io/github/v/release/rENM-Framework/rENM?label=release)](https://github.com/rENM-Framework/rENM/releases) ![license](https://img.shields.io/badge/license-MIT-green)[![Zenodo Community](https://img.shields.io/badge/Zenodo-rENM--Framework-blue?logo=zenodo)](https://zenodo.org/communities/renm-framework/records)
+[![GitHub release](https://img.shields.io/github/v/release/rENM-Framework/rENM?label=release)](https://github.com/rENM-Framework) 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/rENM-Framework/rENM/blob/main/LICENSE.md)
+[![Zenodo Community](https://img.shields.io/badge/Zenodo-rENM--Framework-blue?logo=zenodo)](https://zenodo.org/communities/renm-framework/records)
 
 ------------------------------------------------------------------------
 
