@@ -8,9 +8,11 @@
 
 ------------------------------------------------------------------------
 
-👉 **Start here** — User manual, installation instructions, and workflow examples: [rENM-Framework/rENM-documentation](https://github.com/rENM-Framework/rENM-documentation) or download directly: [rENM-Framework-User-Manual.pdf](https://github.com/rENM-Framework/rENM-documentation/blob/main/rENM-Framework-User-Manual.pdf)
+👉 **Start here** — User manual, installation instructions, and workflow examples: [rENM-Framework-User-Manual.pdf](https://github.com/rENM-Framework/rENM-documentation/blob/main/rENM-Framework-User-Manual.pdf).
 
-📦 **v0.1.0 now available** — All framework deliverables are registered and citable through the [rENM Framework Zenodo Community](https://zenodo.org/communities/renm-framework/records).
+📚 **More information** — Technical reference manuals and project bibliography: [rENM-Framework/rENM-documentation](https://github.com/rENM-Framework/rENM-documentation).
+
+📦 **v0.1.0 now available** — All framework components are registered and citable through the [rENM Framework Zenodo Community](https://zenodo.org/communities/renm-framework/records).
 
 ------------------------------------------------------------------------
 
@@ -68,15 +70,6 @@ At this stage of development, `rENM()` functions as a deterministic supervisory 
 4. Analyze trends in climatic suitability and environmental structure (`rENM.analysis`)
 5. Perform GenAI-driven interpretations of the trend analyses (`rENM.ai`)
 6. Generate reproducible reports (`rENM.reports`)
-
-------------------------------------------------------------------------
-
-## Framework Resources
-
-| Component | Role |
-|---|---|
-| [rENM-documentation](https://github.com/rENM-Framework/rENM-documentation) | User manual and R package reference manuals (also archived on Zenodo)|
-| [rENM-publications](https://github.com/rENM-Framework/rENM-publications) | Papers relating to rENM development and use |
 
 ------------------------------------------------------------------------
 
