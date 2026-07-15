@@ -55,7 +55,7 @@ library(rENM)
 rENM("CASP")
 ```
 
-At this stage of development, `rENM()` functions as a deterministic supervisory agent for the scientific workflow. A single function call executes the entire pipeline in sequence — including data assembly, time-series construction, trend analysis, AI-assisted interpretation, and report generation — for the target species. The workflow overview below describes the purpose and operations of each stage in detail.
+At this stage of development, `rENM()` functions as a deterministic unsupervised controller for the scientific workflow. A single function call executes the entire pipeline in sequence — including data assembly, time-series construction, trend analysis, AI-assisted interpretation, and report generation — for the target species. The workflow overview below describes the purpose and operations of each stage in detail.
 
 ------------------------------------------------------------------------
 ## Workflow Overview
