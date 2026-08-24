@@ -99,17 +99,22 @@ The rENM Framework generates a collection of output products that can support fu
 
 ## Package Installation
 
+Install required modeling support packages:
+``` r
+install.packages(c("gbm", "earth", "randomForest"))
+```
+
 Install the current release from GitHub in dependency order:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("rENM-Framework/rENM.core")
-remotes::install_github("rENM-Framework/rENM.data")
-remotes::install_github("rENM-Framework/rENM.model")
-remotes::install_github("rENM-Framework/rENM.analysis")
-remotes::install_github("rENM-Framework/rENM.ai")
-remotes::install_github("rENM-Framework/rENM.reports")
-remotes::install_github("rENM-Framework/rENM")
+remotes::install_github("rENM-Framework/rENM.core@v0.1.0")
+remotes::install_github("rENM-Framework/rENM.data@v0.1.0")
+remotes::install_github("rENM-Framework/rENM.model@v0.1.0")
+remotes::install_github("rENM-Framework/rENM.analysis@v0.1.0")
+remotes::install_github("rENM-Framework/rENM.ai@v0.1.0")
+remotes::install_github("rENM-Framework/rENM.reports@v0.1.0")
+remotes::install_github("rENM-Framework/rENM@v0.1.0")
 ```
 
 ------------------------------------------------------------------------
