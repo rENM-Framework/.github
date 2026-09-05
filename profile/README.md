@@ -133,7 +133,7 @@ The rENM Framework is an experimental research platform currently under active d
 
 ## Related Publications
 
-Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. (in preparation). The rENM Framework: Toward a Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics.
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. The rENM Framework: A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics. Preprint, bioRxiv, August 7, 2026. https://doi.org/10.64898/2026.08.06.741224.
 
 Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2026. Shifts in seasonal
 climatic suitability for Cassin’s Sparrow (<i>Peucaea cassinii</i>) over four decades. The Southwestern
