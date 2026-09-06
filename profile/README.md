@@ -2,19 +2,19 @@
 
 **A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics**
 
-![Version](https://img.shields.io/github/v/release/rENM-Framework/rENM?display_name=tag&sort=semver)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](#license)
-[![Zenodo Community](https://img.shields.io/badge/Zenodo-rENM--Framework-blue?logo=zenodo)](https://zenodo.org/communities/renm-framework/records)
+[![Version](https://img.shields.io/github/v/release/rENM-Framework/rENM?display_name=tag&sort=semver)](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](#license) [![Zenodo Community](https://img.shields.io/badge/Zenodo-rENM--Framework-blue)](https://zenodo.org/communities/renm-framework/records)
 
-------------------------------------------------------------------------
+---
 
 👉 **Start here** — User manual, installation instructions, and workflow examples: [rENM-Framework-User-Manual.pdf](https://github.com/rENM-Framework/rENM-documentation/blob/main/rENM-Framework-User-Manual.pdf).
 
 📚 **More information** — Technical reference manuals and project bibliography: [rENM-Framework/rENM-documentation](https://github.com/rENM-Framework/rENM-documentation).
 
-📦 **v0.1.0 now available** — All framework components are registered and citable through the [rENM Framework Zenodo Community](https://zenodo.org/communities/renm-framework/records).
+🧾 **Framework versions** — The rENM Framework is a set of independently versioned R packages. A given "Framework version" is a specific, tested combination of package versions. That combination is recorded in [FRAMEWORK-CHANGELOG.md](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md), which maps each Framework version to its component package versions, DOIs, and any related publication.
 
-------------------------------------------------------------------------
+📦 **v0.1.0** is the version described in our bioRxiv preprint and currently under review at PLOS One. It is frozen and citable through the [rENM Framework Zenodo Community](https://zenodo.org/communities/renm-framework/records). Development has continued since that submission; the current state of `main` reflects ongoing work toward v0.2.0. See the [Framework changelog](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md) for what has changed and why.
+
+---
 
 ## What is rENM?
 
@@ -30,39 +30,42 @@ By revealing long-term patterns, rENMs provide a powerful **observational lens**
 
 Although this analytical approach is broadly applicable across taxa, the current implementation of the rENM framework is designed to investigate **climate-driven dynamics in North American bird species**. The framework **spans 45 years (1980–2024)**, leveraging citizen science observations from the **Cornell Lab of Ornithology's eBird database** alongside environmental data derived from **NASA Earth system models**.
 
-------------------------------------------------------------------------
+---
 
 ## Framework Components
 
-| Component | Role |
-|---|---|
-| [`rENM`](https://github.com/rENM-Framework/rENM) | Top-level orchestration; the single entry point for running the complete pipeline |
-| [`rENM.core`](https://github.com/rENM-Framework/rENM.core) | Shared infrastructure: project directory resolution, species and variable metadata, logging |
-| [`rENM.data`](https://github.com/rENM-Framework/rENM.data) | eBird occurrence extraction and MERRA-2 variable assembly, thinning, and temporal binning |
-| [`rENM.model`](https://github.com/rENM-Framework/rENM.model) | Ensemble ENM construction and five-year time-series assembly using the sdm framework |
+| Component                                                          | Role                                                                                         |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| [`rENM`](https://github.com/rENM-Framework/rENM)                   | Top-level orchestration; the single entry point for running the complete pipeline            |
+| [`rENM.core`](https://github.com/rENM-Framework/rENM.core)         | Shared infrastructure: project directory resolution, species and variable metadata, logging  |
+| [`rENM.data`](https://github.com/rENM-Framework/rENM.data)         | eBird occurrence extraction and MERRA-2 variable assembly, thinning, and temporal binning    |
+| [`rENM.model`](https://github.com/rENM-Framework/rENM.model)       | Ensemble ENM construction and five-year time-series assembly using the sdm framework         |
 | [`rENM.analysis`](https://github.com/rENM-Framework/rENM.analysis) | Suitability trends, centroid tracking, bioclimatic velocity, hotspot detection, range change |
-| [`rENM.ai`](https://github.com/rENM-Framework/rENM.ai) | AI-ready package assembly and submission to Claude and ChatGPT for interpretive analysis |
-| [`rENM.reports`](https://github.com/rENM-Framework/rENM.reports) | Summary tables, per-topic report pages, and final species PDF report assembly |
+| [`rENM.ai`](https://github.com/rENM-Framework/rENM.ai)             | AI-ready package assembly and submission to Claude and ChatGPT for interpretive analysis     |
+| [`rENM.reports`](https://github.com/rENM-Framework/rENM.reports)   | Summary tables, per-topic report pages, and final species PDF report assembly                |
 
-------------------------------------------------------------------------
+Each component keeps its own `NEWS.md` with package-level change history. The [Framework changelog](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md) ties these together at the Framework level and links out to the relevant `NEWS.md` entries for detail.
+
+---
 
 ## Usage
 
 The simplest way to run the complete rENM pipeline for a species is through the top-level orchestration package:
 
-``` r
+```r
 library(rENM)
 rENM("CASP")
 ```
 
 At this stage of development, `rENM()` functions as a deterministic unsupervised controller for the scientific workflow. A single function call executes the entire pipeline in sequence — including data assembly, time-series construction, trend analysis, AI-assisted interpretation, and report generation — for the target species. The workflow overview below describes the purpose and operations of each stage in detail.
 
-------------------------------------------------------------------------
+---
+
 ## Workflow Overview
 
 **rENM → rENM.core + rENM.data → rENM.model → rENM.analysis → rENM.ai → rENM.reports**
 
-  The rENM framework's modules allow a user to do the following:
+The rENM framework's modules allow a user to do the following:
 
 1. Orchestrate the complete pipeline for a species (`rENM`)
 2. Assemble occurrence data and environmental predictors (`rENM.core`, `rENM.data`)
@@ -71,42 +74,39 @@ At this stage of development, `rENM()` functions as a deterministic unsupervised
 5. Perform GenAI-driven interpretations of the trend analyses (`rENM.ai`)
 6. Generate reproducible reports (`rENM.reports`)
 
-------------------------------------------------------------------------
+---
 
 ## Example Reports
 
-The rENM Framework includes an experimental AI-assisted module that leverages the interpretive capabilities of ChatGPT and Claude to generate preliminary ecological analyses for review and evaluation by domain experts. Continued refinement, validation, and expansion of these capabilities are an important area of ongoing development. The following are downloadable summary analyses for the three bird species included in the Framework’s example dataset.
+The rENM Framework includes an experimental AI-assisted module that leverages the interpretive capabilities of ChatGPT and Claude to generate preliminary ecological analyses for review and evaluation by domain experts. Continued refinement, validation, and expansion of these capabilities are an important area of ongoing development. The following are downloadable summary analyses for the three bird species included in the Framework's example dataset, generated with **Framework v0.1.0**.
 
-| rENM Framework Analysis Reports |
-| --- |
-| [Cassin's Sparrow (<i>Peucaea cassinii</i>)](https://zenodo.org/records/20750861/files/rENM-Framework-v0.1.0-example-reports-CASP.zip?download=1) |
-| [Greater Roadrunner (<i>Geococcyx californianus</i>)](https://zenodo.org/records/20750861/files/rENM-Framework-v0.1.0-example-reports-GRRO.zip?download=1) |
-| [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://zenodo.org/records/20750861/files/rENM-Framework-v0.1.0-example-reports-BCRF.zip?download=1) |
+| rENM Framework Analysis Reports                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Cassin's Sparrow (*Peucaea cassinii*)](https://zenodo.org/records/20750861/files/rENM-Framework-v0.1.0-example-reports-CASP.zip?download=1)             |
+| [Greater Roadrunner (*Geococcyx californianus*)](https://zenodo.org/records/20750861/files/rENM-Framework-v0.1.0-example-reports-GRRO.zip?download=1)    |
+| [Brown-capped Rosy-Finch (*Leucosticte australis*)](https://zenodo.org/records/20750861/files/rENM-Framework-v0.1.0-example-reports-BCRF.zip?download=1) |
 
-------------------------------------------------------------------------
+---
 
 ## Example Runs
 
-The rENM Framework generates a collection of output products that can support further analysis, conservation status assessments, climate change impact projections, and conservation policy development. Continued refinement, validation, and expansion of these capabilities also remain important areas of ongoing development. The following are collections for the three bird species included in the Framework’s example dataset. Clicking the links below will download ZIP archives containing the complete output collections, which can then be browsed locally on your machine.
+The rENM Framework generates a collection of output products that can support further analysis, conservation status assessments, climate change impact projections, and conservation policy development. Continued refinement, validation, and expansion of these capabilities also remain important areas of ongoing development. The following are collections for the three bird species included in the Framework's example dataset, generated with **Framework v0.1.0**. Clicking the links below will download ZIP archives containing the complete output collections, which can then be browsed locally on your machine.
 
-| Species | Banding Code | File Size | ChatGPT Compute Time | ChatGPT Cost | Claude Compute Time | Claude Cost |
-|---|---|---|---|---| --- | --- |
-| [Cassin's Sparrow (<i>Peucaea cassinii</i>)]() | CASP | 735.9 MB | 19.7 mins | $0.10 | 24.5 mins | $2.29 |
-| [Greater Roadrunner (<i>Geococcyx californianus</i>)]() | GRRO | 978.5 MB | 29.0 mins | $0.38 | 27.9 mins | $1.88 |
-| [Brown-capped Rosy-Finch (<i>Leucosticte australis</i>)](https://zenodo.org/records/20762105/files/rENM-Framework-v0.1.0-example-runs-BCRF.zip?download=1)| BCRF | 292.7 MB | 16.9 mins | $0.25 | 17.8 mins | $1.65 |
+| Species                                                                                                                                               | Banding Code | File Size | ChatGPT Compute Time | ChatGPT Cost | Claude Compute Time | Claude Cost |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- | -------------------- | ------------ | -------------------- | ----------- |
+| [Cassin's Sparrow (*Peucaea cassinii*)](https://github.com/rENM-Framework/.github/blob/main/profile)                                                  | CASP         | 735.9 MB  | 19.7 mins             | $0.10        | 24.5 mins            | $2.29       |
+| [Greater Roadrunner (*Geococcyx californianus*)](https://github.com/rENM-Framework/.github/blob/main/profile)                                         | GRRO         | 978.5 MB  | 29.0 mins             | $0.38        | 27.9 mins            | $1.88       |
+| [Brown-capped Rosy-Finch (*Leucosticte australis*)](https://zenodo.org/records/20762105/files/rENM-Framework-v0.1.0-example-runs-BCRF.zip?download=1) | BCRF         | 292.7 MB  | 16.9 mins             | $0.25        | 17.8 mins            | $1.65       |
 
-------------------------------------------------------------------------
+---
 
 ## Package Installation
 
-Install required modeling support packages:
-``` r
-install.packages(c("gbm", "earth", "randomForest"))
-```
+Two ways to install, depending on what you want.
 
-Install the current release from GitHub in dependency order:
+**To reproduce the results in the bioRxiv preprint / PLOS One submission**, install the exact versions described there (Framework v0.1.0):
 
-``` r
+```r
 # install.packages("remotes")
 remotes::install_github("rENM-Framework/rENM.core@v0.1.0")
 remotes::install_github("rENM-Framework/rENM.data@v0.1.0")
@@ -117,39 +117,53 @@ remotes::install_github("rENM-Framework/rENM.reports@v0.1.0")
 remotes::install_github("rENM-Framework/rENM@v0.1.0")
 ```
 
-------------------------------------------------------------------------
+Substitute the tag for any other Framework version listed in [FRAMEWORK-CHANGELOG.md](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md); each package's tag there may differ from the Framework version number, since packages advance independently.
+
+**To use current development** (post-v0.1.0 fixes and improvements, not yet part of a tagged Framework release), install from `main`:
+
+```r
+remotes::install_github("rENM-Framework/rENM.core")
+remotes::install_github("rENM-Framework/rENM.data")
+remotes::install_github("rENM-Framework/rENM.model")
+remotes::install_github("rENM-Framework/rENM.analysis")
+remotes::install_github("rENM-Framework/rENM.ai")
+remotes::install_github("rENM-Framework/rENM.reports")
+remotes::install_github("rENM-Framework/rENM")
+```
+
+`main` is where corrections and improvements land as they're made. It will not always match the behavior described in a specific paper. If your work depends on matching a publication exactly, use the pinned install above.
+
+---
 
 ## Citing the rENM Framework
 
-All framework deliverables are registered through the [rENM Framework Zenodo Community](https://zenodo.org/communities/renm-framework/records) and carry individual DOIs. If you use the rENM Framework in your research, please cite the relevant components. A consolidated citation list and BibTeX entries are maintained in [rENM-documentation/publications.bib](https://github.com/rENM-Framework/rENM-documentation/blob/main/publications.bib).
+All framework deliverables are registered through the [rENM Framework Zenodo Community](https://zenodo.org/communities/renm-framework/records) and carry individual DOIs. If you use the rENM Framework in your research, please cite the relevant components **and the Framework version you used** (see [FRAMEWORK-CHANGELOG.md](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md) for the DOI set tied to each version). A consolidated citation list and BibTeX entries are maintained in [rENM-documentation/publications.bib](https://github.com/rENM-Framework/rENM-documentation/blob/main/publications.bib).
 
-------------------------------------------------------------------------
+---
 
 ## Research Status Disclaimer
 
 The rENM Framework is an experimental research platform currently under active development. We are releasing the software, workflows, and analytical methods to encourage exploration, evaluation, replication, and further refinement by the broader community. While the framework has produced promising results in our own studies — including potentially important new insights into the climatic ecology and natural history of Cassin's Sparrow — these approaches should be regarded as exploratory and investigational rather than fully validated operational methods. We hope others will test the framework, evaluate its strengths and limitations, and contribute to the continued advancement of climate-informed ecological modeling and conservation analysis.
 
-------------------------------------------------------------------------
+---
 
 ## Related Publications
 
-Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. The rENM Framework: A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics. Preprint, bioRxiv, August 7, 2026. https://doi.org/10.64898/2026.08.06.741224.
+Schnase, John L., Mark L. Carroll, Paul M. Montesano, and Virginia A. Seamster. "The rENM Framework: A Modular System for Reconstructing and Analyzing Long-Term Ecological Niche Dynamics." Preprint, bioRxiv, August 7, 2026. <https://doi.org/10.64898/2026.08.06.741224>. Submitted to PLOS One; review in progress.
 
-Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2026. Shifts in seasonal
-climatic suitability for Cassin’s Sparrow (<i>Peucaea cassinii</i>) over four decades. The Southwestern
-Naturalist, 70(1):1-17. https://doi.org/10.1894/0038-4909-70.1.7
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2026. Shifts in seasonal climatic suitability for Cassin's Sparrow (*Peucaea cassinii*) over four decades. The Southwestern Naturalist, 70(1):1-17. <https://doi.org/10.1894/0038-4909-70.1.7>
 
-Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2025. Shifts in breeding phenology for Cassin’s Sparrow (Peucaea cassinii) over four decades. Journal of Field Ornithology 96(3):3. https://doi.org/10.5751/JFO-00691-960303
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2025. Shifts in breeding phenology for Cassin's Sparrow (Peucaea cassinii) over four decades. Journal of Field Ornithology 96(3):3. <https://doi.org/10.5751/JFO-00691-960303>
 
-Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2024. Complex changes in climatic suitability for Cassin’s Sparrow (Peucaea cassinii) revealed by retrospective ecological niche modeling. Journal of Field Ornithology 95(1):9. https://doi.org/10.5751/JFO-00432-950109
+Schnase, J. L., M. L. Carroll, P. M. Montesano, and V. A. Seamster. 2024. Complex changes in climatic suitability for Cassin's Sparrow (Peucaea cassinii) revealed by retrospective ecological niche modeling. Journal of Field Ornithology 95(1):9. <https://doi.org/10.5751/JFO-00432-950109>
 
-Schnase, J.L., and M.L. Carroll. 2023. “The MMX Toolkit: High-Performance, Reanalysis-Based Climatic Suitability Modeling to Advance Avian Conservation.” In Proceedings of the 2023 Conference on Big Data from Space (BiDS’23): 6-9 November 2023, edited by P. Soille, S. Lumnitz, and S. Albani, 299–303. Austrian Center, Vienna: Publications Office of the European. https://doi.org/10.2760/46796.
+Schnase, J.L., and M.L. Carroll. 2023. "The MMX Toolkit: High-Performance, Reanalysis-Based Climatic Suitability Modeling to Advance Avian Conservation." In Proceedings of the 2023 Conference on Big Data from Space (BiDS'23): 6-9 November 2023, edited by P. Soille, S. Lumnitz, and S. Albani, 299–303. Austrian Center, Vienna: Publications Office of the European. <https://doi.org/10.2760/46796>.
 
-Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection in ecological niche modeling: a case study using Cassin’s Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. https://doi.org/10.1371/journal.pone.0257502. PMID: 35061658; PMCID: PMC8782318.
+Schnase, J.L. and Carroll, M.L. 2022. Automatic variable selection in ecological niche modeling: a case study using Cassin's Sparrow (Peucaea cassinii). PLoS One. 2022 Jan 21;17(1):e0257502. <https://doi.org/10.1371/journal.pone.0257502>. PMID: 35061658; PMCID: PMC8782318.
 
-Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. https://doi.org/10.1371/journal.pone.0237208. PMID: 33657125; PMCID: PMC7928495.
+Schnase, J.L., M.L. Carroll, R.L. Gill, G.S. Tamkin, J. Li, S.L. Strong, T.P. Maxwell, M.E. Aronne, and C.S. Spradlin. Toward a Monte Carlo approach to selecting climate variables in MaxEnt. PLoS One. 2021. Mar 3;16(3):e0237208. <https://doi.org/10.1371/journal.pone.0237208>. PMID: 33657125; PMCID: PMC7928495.
 
-------------------------------------------------------------------------
+---
 
 ## License
 
@@ -163,8 +177,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-------------------------------------------------------------------------
+---
 
 **Contact:** [rENM.Framework\@gmail.com](mailto:rENM.Framework@gmail.com){.email} \| **Issues:** <https://github.com/rENM-Framework/rENM/issues>
 
-------------------------------------------------------------------------
+---
