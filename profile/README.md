@@ -6,7 +6,7 @@
 
 ---
 
-👉 **Start here** — User manual, installation instructions, and workflow examples: [rENM-Framework-User-Manual.pdf](https://github.com/rENM-Framework/rENM-documentation/blob/main/rENM-Framework-User-Manual.pdf).
+👉 **Start here** — User manual, installation instructions, and workflow examples: [rENM-Framework-User-Manual.pdf](https://github.com/rENM-Framework/rENM-documentation/blob/v0.1.0/rENM-Framework-User-Manual.pdf) (Framework v0.1.0).
 
 📚 **More information** — Technical reference manuals and project bibliography: [rENM-Framework/rENM-documentation](https://github.com/rENM-Framework/rENM-documentation).
 
@@ -57,7 +57,7 @@ library(rENM)
 rENM("CASP")
 ```
 
-At this stage of development, `rENM()` functions as a deterministic unsupervised controller for the scientific workflow. A single function call executes the entire pipeline in sequence — including data assembly, time-series construction, trend analysis, AI-assisted interpretation, and report generation — for the target species. The workflow overview below describes the purpose and operations of each stage in detail.
+At this stage of development, `rENM()` functions as an unsupervised controller for the scientific workflow. A single function call executes the entire pipeline in sequence — including data assembly, time-series construction, trend analysis, AI-assisted interpretation, and report generation — for the target species. The workflow overview below describes the purpose and operations of each stage in detail.
 
 ---
 
@@ -94,8 +94,8 @@ The rENM Framework generates a collection of output products that can support fu
 
 | Species                                                                                                                                               | Banding Code | File Size | ChatGPT Compute Time | ChatGPT Cost | Claude Compute Time | Claude Cost |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- | -------------------- | ------------ | -------------------- | ----------- |
-| [Cassin's Sparrow (*Peucaea cassinii*)](https://github.com/rENM-Framework/.github/blob/main/profile)                                                  | CASP         | 735.9 MB  | 19.7 mins             | $0.10        | 24.5 mins            | $2.29       |
-| [Greater Roadrunner (*Geococcyx californianus*)](https://github.com/rENM-Framework/.github/blob/main/profile)                                         | GRRO         | 978.5 MB  | 29.0 mins             | $0.38        | 27.9 mins            | $1.88       |
+| [Cassin's Sparrow (*Peucaea cassinii*)](https://zenodo.org/records/20762105/files/rENM-Framework-v0.1.0-example-runs-CASP.zip?download=1)             | CASP         | 735.9 MB  | 19.7 mins             | $0.10        | 24.5 mins            | $2.29       |
+| [Greater Roadrunner (*Geococcyx californianus*)](https://zenodo.org/records/20762105/files/rENM-Framework-v0.1.0-example-runs-GRRO.zip?download=1)    | GRRO         | 978.5 MB  | 29.0 mins             | $0.38        | 27.9 mins            | $1.88       |
 | [Brown-capped Rosy-Finch (*Leucosticte australis*)](https://zenodo.org/records/20762105/files/rENM-Framework-v0.1.0-example-runs-BCRF.zip?download=1) | BCRF         | 292.7 MB  | 16.9 mins             | $0.25        | 17.8 mins            | $1.65       |
 
 ---
