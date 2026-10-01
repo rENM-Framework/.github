@@ -23,7 +23,7 @@
 By revealing long-term patterns, rENMs provide a powerful **observational lens** for addressing biological questions and assessing both the **current and future conservation status of species**. Rather than treating ecological niche models as static representations, the rENM framework uses **time-structured modeling** to reveal:
 
 - Long-term trends in climatic suitability for a species
-- Acceleration and deceleration in these long-term trends
+- Changes in the pace of these long-term trends
 - Changes in environmental structure across decades
 - Bioclimatic velocity and directional change in suitability
 - Hot spots of potential climate change vulnerability
