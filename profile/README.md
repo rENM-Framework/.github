@@ -44,7 +44,7 @@ Although this analytical approach is broadly applicable across CONUS taxa, the c
 | [`rENM.ai`](https://github.com/rENM-Framework/rENM.ai)             | AI-ready package assembly and submission to Claude and ChatGPT for interpretive analysis     |
 | [`rENM.reports`](https://github.com/rENM-Framework/rENM.reports)   | Summary tables, per-topic report pages, and final species PDF report assembly                |
 
-Each component keeps its own `NEWS.md` with package-level change history. The [Framework changelog](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md) ties these together at the Framework level and links out to the relevant `NEWS.md` entries for detail.
+Each component keeps its own `NEWS.md` with package-level change history. The [Framework changelog](https://github.com/rENM-Framework/rENM-documentation/blob/main/FRAMEWORK-CHANGELOG.md) ties these together at the Framework level.
 
 ---
 
